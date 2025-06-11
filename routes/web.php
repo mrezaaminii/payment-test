@@ -16,6 +16,3 @@ Route::group([
     Route::post('/verify', [PaymentController::class, 'verify'])->name('payment.verify');
 });
 
-Route::get('/test', function () {
-    dd('hi');
-});

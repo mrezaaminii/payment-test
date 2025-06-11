@@ -15,3 +15,7 @@ Route::group([
     Route::post('/', [PaymentController::class, 'initiatePayment'])->name('payment.gateway')->middleware(PaymentMiddleware::class);
     Route::post('/verify', [PaymentController::class, 'verify'])->name('payment.verify');
 });
+
+Route::get('/test', function () {
+    dd('hi');
+});
